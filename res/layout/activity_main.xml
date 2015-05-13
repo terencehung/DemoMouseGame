@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:textColor="#FF0099"
+        android:background="#00000000"
+        android:text="Play Game" />
+
+    <Button
+        android:id="@+id/setmusicButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/startButton"
+        android:layout_below="@+id/startButton"
+        android:layout_marginTop="22dp"
+        android:background="#00000000"
+        android:text="Volums Setting"
+        android:textColor="#FF0099" />
+
+    <Button
+        android:id="@+id/overButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/setmusicButton"
+        android:layout_below="@+id/setmusicButton"
+        android:layout_marginTop="31dp"
+        android:background="#00000000"
+        android:text="Close Game"
+        android:textColor="#FF0099" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/startButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="39dp"
+        android:text="DemoGame For Cat"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF0099" />
+
+</RelativeLayout>

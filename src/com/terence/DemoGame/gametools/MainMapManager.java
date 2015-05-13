@@ -13,7 +13,9 @@ import android.graphics.Bitmap.Config;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 
+
 import com.terence.DemoGame.R;
+
 import com.terence.DemoGame.gameargs.GameAgrs;
 
 public class MainMapManager {

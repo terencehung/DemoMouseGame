@@ -1,9 +1,10 @@
-package com.example.pingping_game2;
+package com.terence.DemoGame;
 
-import com.example.pingping_game2.gametools.MainMapManager;
-import com.example.pingping_game2.musicTools.MusicPlayThread;
-import com.example.pingping_game2.musicTools.VolumsPlayer;
-import com.example.pingping_game2.musicTools.musicPlayer;
+import com.example.pingping_game2.R;
+import com.terence.DemoGame.gametools.MainMapManager;
+import com.terence.DemoGame.musicTools.MusicPlayThread;
+import com.terence.DemoGame.musicTools.VolumsPlayer;
+import com.terence.DemoGame.musicTools.musicPlayer;
 
 import android.media.SoundPool;
 import android.os.Bundle;

@@ -1,4 +1,4 @@
-package com.example.pingping_game2.gametools;
+package com.terence.DemoGame.gametools;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.Drawable;
 
 import com.example.pingping_game2.R;
-import com.example.pingping_game2.gameargs.GameAgrs;
+import com.terence.DemoGame.gameargs.GameAgrs;
 
 public class MainMapManager {
 

@@ -1,7 +1,7 @@
-package com.example.pingping_game2.gameargs;
+package com.terence.DemoGame.gameargs;
 
 import com.example.pingping_game2.R;
-import com.example.pingping_game2.musicTools.VolumsPlayer;
+import com.terence.DemoGame.musicTools.VolumsPlayer;
 
 import android.R.integer;
 

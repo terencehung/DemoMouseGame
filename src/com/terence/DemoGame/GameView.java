@@ -1,14 +1,14 @@
-package com.example.pingping_game2;
+package com.terence.DemoGame;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-import com.example.pingping_game2.gameargs.Epicture;
-import com.example.pingping_game2.gameargs.GameAgrs;
-import com.example.pingping_game2.gametools.MainMapManager;
-import com.example.pingping_game2.musicTools.VolumsPlayer;
+import com.terence.DemoGame.gameargs.Epicture;
+import com.terence.DemoGame.gameargs.GameAgrs;
+import com.terence.DemoGame.gametools.MainMapManager;
+import com.terence.DemoGame.musicTools.VolumsPlayer;
 
 import android.R.integer;
 import android.app.AlertDialog;

@@ -1,4 +1,4 @@
-package com.example.pingping_game2.musicTools;
+package com.terence.DemoGame.musicTools;
 
 public class MusicPlayThread extends Thread{
 

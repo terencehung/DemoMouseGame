@@ -1,4 +1,4 @@
-package com.example.pingping_game2.gameargs;
+package com.terence.DemoGame.gameargs;
 
 import java.net.ContentHandler;
 

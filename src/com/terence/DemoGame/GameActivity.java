@@ -1,7 +1,7 @@
-package com.example.pingping_game2;
+package com.terence.DemoGame;
 
-import com.example.pingping_game2.gameargs.GameAgrs;
-import com.example.pingping_game2.gametools.MainMapManager;
+import com.terence.DemoGame.gameargs.GameAgrs;
+import com.terence.DemoGame.gametools.MainMapManager;
 
 import android.app.Activity;
 import android.os.Bundle;

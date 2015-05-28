@@ -36,7 +36,7 @@ public class Epicture {
 		if (Currenty > 0) {
 			Currenty--;
 			if (Currenty == 0) { // 如果再地鼠回到洞里之前没打掉就扣血
-				GameAgrs.HP--;
+				//GameAgrs.HP--;
 			}
 		} else if (Currenty < 0) {
 			Currenty++;

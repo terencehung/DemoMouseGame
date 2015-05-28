@@ -72,12 +72,12 @@ public class GameView extends View {
                 tempList.poll().ToShow();
             } else if (tempSize > 1) {
                 // 随机出一个或者两个地鼠
-                for (int i = 0; i < random.nextInt(2) + 1; i++) {
+                for (int i = 0; i < random.nextInt(1) + 1; i++) {
                     tempList.remove(random.nextInt(tempList.size())).ToShow();
                 }
                 GameView.this.invalidate();
             }
-            GameView.this.postDelayed(this, 800 - GameAgrs.Grade / 20);
+            GameView.this.postDelayed(this, 1000 - GameAgrs.Grade / 20);
         }
     };
 
@@ -128,7 +128,7 @@ public class GameView extends View {
         if (GameAgrs.HP <= 0) {
             getHandler().removeCallbacks(UpdatePaint);
             getHandler().removeCallbacks(setMouse);
-            DoGameOver();
+//            DoGameOver();
             return;
         }
         canvas.drawColor(Color.WHITE); // 将背景设置为白色

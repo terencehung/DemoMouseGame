@@ -51,7 +51,7 @@ public class GameView extends View {
         public void run() {
             // TODO Auto-generated method stub
             GameView.this.invalidate();
-            GameView.this.postDelayed(this, 400); // 每100ms刷新一次
+            GameView.this.postDelayed(this, 100); // 每100ms刷新一次
         }
     };
 
@@ -78,7 +78,7 @@ public class GameView extends View {
                 GameView.this.invalidate();
             }
 //            GameView.this.postDelayed(this, 2000 - GameAgrs.Grade / 20);
-            GameView.this.postDelayed(this, 4000 );
+            GameView.this.postDelayed(this, 3000 );
         }
     };
 

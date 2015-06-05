@@ -17,8 +17,8 @@ public class VolumsPlayer {
 	private static Context context;
 	private static SoundPool soundPool;
 	private static Map<Integer, Integer> soundMap;
-//	private static boolean flag =false;
-	private static boolean flag = true;
+	private static boolean flag =false;
+//	private static boolean flag = true;
 
 	public static void init(Context c) {
 		// TODO Auto-generated constructor stub

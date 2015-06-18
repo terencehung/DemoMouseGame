@@ -19,6 +19,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.util.AttributeSet;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Toast;
@@ -51,7 +52,8 @@ public class GameView extends View {
         public void run() {
             // TODO Auto-generated method stub
             GameView.this.invalidate();
-            GameView.this.postDelayed(this, 100); // 每100ms刷新一次
+            Log.e("postDelayed","UpdatePaint");
+            GameView.this.postDelayed(this, 10000); // 每100ms刷新一次
         }
     };
 
@@ -62,34 +64,40 @@ public class GameView extends View {
             // TODO Auto-generated method stub
             LinkedList<Epicture> tempList = new LinkedList<Epicture>();
             for (int i = 0; i < mainList.size(); i++) {
+             
                 Epicture epicture = mainList.get(i);
                 if (epicture.GetCurrenty() == GameAgrs.Hole_Empty) {
+                    Log.e("postDelayed","mainList.get(i)"+i);
                     tempList.add(epicture);
                 }
             }
             int tempSize = tempList.size();
             if (tempSize == 1) {
+                Log.e("postDelayed","ToShow()");
                 tempList.poll().ToShow();
             } else if (tempSize > 1) {
                 // 随机出一个或者两个地鼠
                 for (int i = 0; i < random.nextInt(1) + 1; i++) {
                     tempList.remove(random.nextInt(tempList.size())).ToShow();
+                    Log.e("postDelayed","ToShowMouse()");
                 }
                 GameView.this.invalidate();
             }
-//            GameView.this.postDelayed(this, 2000 - GameAgrs.Grade / 20);
-            GameView.this.postDelayed(this, 3000 );
+            //空白區域的時間
+            GameView.this.postDelayed(this, 5000 );
+            Log.e("postDelayed","postDelayed(this, 3000)");
+//            GameView.this.postDelayed(this, 5000 );
         }
     };
 
     private void DrawMessage(Canvas canvas) {
-        Paint paint = new Paint();
-        paint.setColor(Color.RED);
-        paint.setTextSize(GameAgrs.text_size);
-        canvas.drawText("HP：  " + GameAgrs.HP, GameAgrs.HP_X, GameAgrs.HP_Y,
-                paint);
-        canvas.drawText("\nGrade:  " + GameAgrs.Grade, GameAgrs.Grade_X,
-                GameAgrs.Grade_Y, paint);
+//        Paint paint = new Paint();
+//        paint.setColor(Color.RED);
+//        paint.setTextSize(GameAgrs.text_size);
+//        canvas.drawText("HP：  " + GameAgrs.HP, GameAgrs.HP_X, GameAgrs.HP_Y,
+//                paint);
+//        canvas.drawText("\nGrade:  " + GameAgrs.Grade, GameAgrs.Grade_X,
+//                GameAgrs.Grade_Y, paint);
     }
 
     // 游戏结束处理

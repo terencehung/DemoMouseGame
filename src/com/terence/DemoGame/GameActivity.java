@@ -13,7 +13,7 @@ import android.view.WindowManager;
 public class GameActivity extends Activity {
 
 	private DisplayMetrics dMetrics;
-
+ 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
